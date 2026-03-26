@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Surة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2ecc71;
+            --primary-gold: #f1c40f;
+            --dark-bg: #0a0a12;
+            --card-bg: #1e1e2e;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #1a1a2e;
+        }
+
+        .logo {
+            font-family: 'Georgia', serif;
+            font-size: 28px;
+            color: var(--primary-gold);
+            text-decoration: none;
+        }
+
+        main {
+            padding: 60px 0;
+        }
+
+        .app-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--primary-green), #27ae60);
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 20px 40px rgba(46, 204, 113, 0.3);
+        }
+
+        .app-icon span {
+            font-family: 'Georgia', serif;
+            font-size: 36px;
+            color: white;
+        }
+
+        .app-header h1 {
+            font-family: 'Georgia', serif;
+            font-size: 42px;
+            color: var(--primary-gold);
+            margin-bottom: 10px;
+        }
+
+        .app-header .tagline {
+            font-size: 18px;
+            color: var(--text-secondary);
+        }
+
+        .section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 22px;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+
+        .section h2 .icon {
+            font-size: 24px;
+        }
+
+        .section p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list .icon {
+            font-size: 20px;
+        }
+
+        .features-list span {
+            color: var(--text-secondary);
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 0;
+        }
+
+        .contact-list .icon {
+            font-size: 20px;
+        }
+
+        .contact-list a {
+            color: var(--primary-gold);
+            text-decoration: none;
+        }
+
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        .version-info {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #1a1a2e;
+        }
+
+        .version-info p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .version-info .made-with {
+            font-size: 13px;
+            color: #666;
+        }
+
+        footer {
+            border-top: 1px solid #1a1a2e;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--primary-gold);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .app-header h1 {
+                font-size: 32px;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Surة</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- App Header -->
+            <div class="app-header">
+                <div class="app-icon">
+                    <span>Surة</span>
+                </div>
+                <h1>Surة</h1>
+                <p class="tagline">Your companion for prayer times and Quran</p>
+            </div>
+
+            <!-- Mission -->
+            <div class="section">
+                <h2><span class="icon">❤️</span> Our Mission</h2>
+                <p>Surة is designed to help Muslims stay connected with their faith through accurate prayer times, easy Quran access, and meaningful reminders.</p>
+                <p>We believe technology should serve spiritual growth and bring peace to daily life. Our goal is to create a beautiful, reliable, and respectful app that supports your daily Islamic practices.</p>
+            </div>
+
+            <!-- Features -->
+            <div class="section">
+                <h2><span class="icon">⭐</span> Features</h2>
+                <ul class="features-list">
+                    <li>
+                        <span class="icon">🕌</span>
+                        <span>Accurate prayer times for your location</span>
+                    </li>
+                    <li>
+                        <span class="icon">📖</span>
+                        <span>Complete Quran with 6,236 verses and translations</span>
+                    </li>
+                    <li>
+                        <span class="icon">🧭</span>
+                        <span>Qibla compass for prayer direction</span>
+                    </li>
+                    <li>
+                        <span class="icon">🔔</span>
+                        <span>Customizable prayer notifications</span>
+                    </li>
+                    <li>
+                        <span class="icon">🌙</span>
+                        <span>Inspirational Friday messages</span>
+                    </li>
+                    <li>
+                        <span class="icon">❤️</span>
+                        <span>Save and like your favorite verses</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Team -->
+            <div class="section">
+                <h2><span class="icon">👥</span> Our Team</h2>
+                <p>We are a small team of developers and designers passionate about creating meaningful apps for the Muslim community.</p>
+                <p>Your feedback helps us improve every day. We're committed to making Surة the best Islamic companion app available.</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="section">
+                <h2><span class="icon">📧</span> Contact Us</h2>
+                <ul class="contact-list">
+                    <li>
+                        <span class="icon">📧</span>
+                        <a href="mailto:support@aeasoftware.com">support@aeasoftware.com</a>
+                    </li>
+                    <li>
+                        <span class="icon">🌐</span>
+                        <a href="index.html">www.aeasoftware.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Version Info -->
+            <div class="version-info">
+                <p>Version 1.0.0</p>
+                <p>© 2026 AEA Software All rights reserved.</p>
+                <p class="made-with">Made with ❤️ in Turkey</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
